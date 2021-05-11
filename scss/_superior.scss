@@ -1,0 +1,96 @@
+//A continuación se le da estilo a el header de todos los html, que es el mismo.
+
+#superior{
+    display: inline-flex;
+    justify-content: space-between;
+    height: 110px;
+    width: 100%;
+    margin: 0 0;
+    align-items: stretch;
+    .superior__link{
+        width: 22%;
+        margin: $size; 
+        .linkConsulta{
+            text-decoration: none;       
+            color: $color;
+            font-style: bold;
+            font-size: 18px;
+            &:hover{
+                background: $olivadebil;
+                color: $bg-color;
+            }
+        }
+    } 
+    .superior__titulo{
+        justify-content: center;
+        align-content: top;
+        margin-top: $padd + 1;
+        width: auto; 
+        .tit{
+            align-self: center;
+            font-size: 35px;
+            color: $color;
+            animation-duration: 4s;
+            animation-name: "tit";
+        }
+    }
+    .superior__numero{
+        margin: $size; 
+        width: 22%;  
+        .num{
+            color: $color;
+            font-size: 25px;
+            text-align: right;
+            padding-top: 0;
+            font-style: bold;
+            &:hover{                       
+                transform: translateX(-50px);
+                transition: all 3s;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    #superior{   
+        height: 110px;
+        .superior__link{ 
+            .linkConsulta{
+                font-size: 15px;
+            }
+        } 
+        .superior__titulo{
+            margin-top: $padd+ 1em;  
+            .tit{
+                text-align:center;
+                font-size: 30px;
+                }
+            }    
+        }
+        .superior__numero{
+            .num{ 
+                &:hover{
+                    transform: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    #superior{ 
+        height: 90px; 
+        width: auto;
+        .superior__link{
+            .linkConsulta{
+                font-size: 11px;       
+            } 
+        }
+        .superior__titulo{
+            margin-top: 1.5em;
+            .tit{
+                font-size: 26px;
+                padding: .5em;
+            }
+        }    
+    }
+}
