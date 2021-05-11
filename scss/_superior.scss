@@ -14,7 +14,7 @@
             text-decoration: none;       
             color: $color;
             font-style: bold;
-            font-size: 18px;
+            font-size: 1.5em;
             &:hover{
                 background: $olivadebil;
                 color: $bg-color;
@@ -28,7 +28,7 @@
         width: auto; 
         .tit{
             align-self: center;
-            font-size: 35px;
+            font-size: 2.5em;
             color: $color;
             animation-duration: 4s;
             animation-name: "tit";
@@ -39,7 +39,7 @@
         width: 22%;  
         .num{
             color: $color;
-            font-size: 25px;
+            font-size: 2em;
             text-align: right;
             padding-top: 0;
             font-style: bold;
